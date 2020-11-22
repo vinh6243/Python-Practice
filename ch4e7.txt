@@ -1,0 +1,40 @@
+"""
+Chapter 4. EX7
+Rewrite the grade program from the previous chapter using
+a function called computegrade that takes a score as its parameter and
+returns a grade as a string. score must between 0.0 and 1.0 if more display score invalid. Use try exception
+"""
+
+
+def display():
+    print('Score \t\t Grade');
+    print('>= 0.9 \t\t A');
+    print('>= 0.8 \t\t B');
+    print('>= 0.7 \t\t C');
+    print('>= 0.6 \t\t D');
+    print(' < 0.6 \t\t F');
+    print(' -------------');
+    
+def computegrade():
+    try: 
+        grade = float(input('Enter score: '));
+        if score > 0.0 and score < 1.0 :
+            if(score >= 0.9):
+                print('A');
+            elif(score >= 0.8):
+                print('B');
+            elif(score >= 0.7):
+                print('C');
+            elif(score >= 0.6):
+                print('C');
+            else:
+                print('F');
+    except: 
+        print('Invalid score!');
+
+
+
+
+if __name__ == "__main__":
+    display();
+    computegrade();
